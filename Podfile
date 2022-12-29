@@ -7,5 +7,6 @@ target 'MBProgressHUD-demo' do
 
   # Pods for MBProgressHUD-demo
   pod 'MBProgressHUD'
-
+  pod 'AFNetworking', '~> 3.1.0'
+  pod 'JKCategories', '~> 1.0' # 分类
 end

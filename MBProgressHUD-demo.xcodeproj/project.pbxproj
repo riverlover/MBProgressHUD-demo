@@ -18,6 +18,12 @@
 		56809AB5295C066C0050EBBC /* MBProgressHUD+JDragon.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AB4295C066C0050EBBC /* MBProgressHUD+JDragon.m */; };
 		56809AB7295C06C40050EBBC /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56809AB6295C06C40050EBBC /* MBProgressHUD+JDragon.bundle */; };
 		56809AC0295C141D0050EBBC /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809ABF295C141D0050EBBC /* MBProgressHUD+MJ.m */; };
+		56809AE6295D31F20050EBBC /* SZHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AE5295D31F20050EBBC /* SZHttpRequest.m */; };
+		56809AEA295D35FF0050EBBC /* SZNetRequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AE9295D35FF0050EBBC /* SZNetRequestModel.m */; };
+		56809AED295D472A0050EBBC /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AEC295D472A0050EBBC /* NSString+Utils.m */; };
+		56809AF2295D53540050EBBC /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AF1295D53540050EBBC /* RSA.m */; };
+		56809AF5295D5EE10050EBBC /* SCRSASignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AF4295D5EE10050EBBC /* SCRSASignature.m */; };
+		56809AF8295D6B760050EBBC /* SZSingleHttpSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 56809AF7295D6B760050EBBC /* SZSingleHttpSession.m */; };
 		C4FDB4D06C19E8987F60E518 /* Pods_MBProgressHUD_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 612D8C3B80B44AA52B6BA25B /* Pods_MBProgressHUD_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +47,18 @@
 		56809AB6295C06C40050EBBC /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
 		56809ABE295C141D0050EBBC /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		56809ABF295C141D0050EBBC /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		56809AE4295D31F20050EBBC /* SZHttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZHttpRequest.h; sourceTree = "<group>"; };
+		56809AE5295D31F20050EBBC /* SZHttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZHttpRequest.m; sourceTree = "<group>"; };
+		56809AE8295D35FF0050EBBC /* SZNetRequestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZNetRequestModel.h; sourceTree = "<group>"; };
+		56809AE9295D35FF0050EBBC /* SZNetRequestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZNetRequestModel.m; sourceTree = "<group>"; };
+		56809AEB295D472A0050EBBC /* NSString+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		56809AEC295D472A0050EBBC /* NSString+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		56809AF0295D53540050EBBC /* RSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		56809AF1295D53540050EBBC /* RSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		56809AF3295D5EE10050EBBC /* SCRSASignature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRSASignature.h; sourceTree = "<group>"; };
+		56809AF4295D5EE10050EBBC /* SCRSASignature.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCRSASignature.m; sourceTree = "<group>"; };
+		56809AF6295D6B760050EBBC /* SZSingleHttpSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZSingleHttpSession.h; sourceTree = "<group>"; };
+		56809AF7295D6B760050EBBC /* SZSingleHttpSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SZSingleHttpSession.m; sourceTree = "<group>"; };
 		612D8C3B80B44AA52B6BA25B /* Pods_MBProgressHUD_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBProgressHUD_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		91D1AA3E163717B486950E3E /* Pods-MBProgressHUD-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUD-demo.debug.xcconfig"; path = "Target Support Files/Pods-MBProgressHUD-demo/Pods-MBProgressHUD-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F0198C09751E4634BDC7F1 /* Pods-MBProgressHUD-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBProgressHUD-demo.release.xcconfig"; path = "Target Support Files/Pods-MBProgressHUD-demo/Pods-MBProgressHUD-demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +124,8 @@
 		56809AAD295C05A00050EBBC /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				56809AEE295D53020050EBBC /* algorithm */,
+				56809AE3295D30C00050EBBC /* NetManager */,
 				56809AAE295C05AA0050EBBC /* category */,
 			);
 			path = custom;
@@ -119,6 +139,8 @@
 				56809AB0295C05C50050EBBC /* UIViewController+MBShowUIData.m */,
 				56809ABE295C141D0050EBBC /* MBProgressHUD+MJ.h */,
 				56809ABF295C141D0050EBBC /* MBProgressHUD+MJ.m */,
+				56809AEB295D472A0050EBBC /* NSString+Utils.h */,
+				56809AEC295D472A0050EBBC /* NSString+Utils.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -131,6 +153,46 @@
 				56809AB6295C06C40050EBBC /* MBProgressHUD+JDragon.bundle */,
 			);
 			path = "MBProgressHUD+JDragon";
+			sourceTree = "<group>";
+		};
+		56809AE3295D30C00050EBBC /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				56809AE7295D35EC0050EBBC /* model */,
+				56809AE4295D31F20050EBBC /* SZHttpRequest.h */,
+				56809AE5295D31F20050EBBC /* SZHttpRequest.m */,
+				56809AF6295D6B760050EBBC /* SZSingleHttpSession.h */,
+				56809AF7295D6B760050EBBC /* SZSingleHttpSession.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		56809AE7295D35EC0050EBBC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				56809AE8295D35FF0050EBBC /* SZNetRequestModel.h */,
+				56809AE9295D35FF0050EBBC /* SZNetRequestModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		56809AEE295D53020050EBBC /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				56809AEF295D53420050EBBC /* rsa */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		56809AEF295D53420050EBBC /* rsa */ = {
+			isa = PBXGroup;
+			children = (
+				56809AF0295D53540050EBBC /* RSA.h */,
+				56809AF1295D53540050EBBC /* RSA.m */,
+				56809AF3295D5EE10050EBBC /* SCRSASignature.h */,
+				56809AF4295D5EE10050EBBC /* SCRSASignature.m */,
+			);
+			path = rsa;
 			sourceTree = "<group>";
 		};
 		B78BDFD8953F310297F6DDCC /* Pods */ = {
@@ -257,11 +319,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56809AF2295D53540050EBBC /* RSA.m in Sources */,
+				56809AF8295D6B760050EBBC /* SZSingleHttpSession.m in Sources */,
+				56809AE6295D31F20050EBBC /* SZHttpRequest.m in Sources */,
 				56809A96295BDEA90050EBBC /* ViewController.m in Sources */,
 				56809AB5295C066C0050EBBC /* MBProgressHUD+JDragon.m in Sources */,
 				56809A90295BDEA90050EBBC /* AppDelegate.m in Sources */,
 				56809AA1295BDEAB0050EBBC /* main.m in Sources */,
+				56809AEA295D35FF0050EBBC /* SZNetRequestModel.m in Sources */,
 				56809AC0295C141D0050EBBC /* MBProgressHUD+MJ.m in Sources */,
+				56809AED295D472A0050EBBC /* NSString+Utils.m in Sources */,
+				56809AF5295D5EE10050EBBC /* SCRSASignature.m in Sources */,
 				56809A93295BDEA90050EBBC /* SceneDelegate.m in Sources */,
 				56809AB1295C05C50050EBBC /* UIViewController+MBShowUIData.m in Sources */,
 			);
