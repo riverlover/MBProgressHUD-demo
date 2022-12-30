@@ -15,8 +15,8 @@
 #import "SZHttpRequest.h"
 
 
-@interface ViewController ()
-
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property(strong, nonatomic) UICollectionView* collectionView;
 @end
 
 @implementation ViewController
@@ -43,14 +43,52 @@
     
     //测试发送http请求
     
-    NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
-    dic[@"type"] = @"0";//类型（（启动页用1 首页banner用0
-    [SZHttpRequest requestDataWithParam:dic businessId:bannerGetByTypeApi responseDict:^(NSDictionary * _Nonnull responseObject, BOOL responseOK) {
-        [self hide_SC_HUD];
-
-        
-    }];
+//    NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
+//    dic[@"type"] = @"0";//类型（（启动页用1 首页banner用0
+//    [SZHttpRequest requestDataWithParam:dic businessId:bannerGetByTypeApi responseDict:^(NSDictionary * _Nonnull responseObject, BOOL responseOK) {
+//        [self hide_SC_HUD];
+//
+//
+//    }];
+    
+    
+    //UICollectionView 示例
+    UICollectionViewFlowLayout* layout = [[UICollectionViewFlowLayout alloc]init];
+    layout.itemSize = CGSizeMake((self.view.frame.size.width - 80)/3, 100);
+    layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+    layout.minimumLineSpacing = 20;
+    layout.minimumInteritemSpacing = 20;
+    layout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
+    
+    self.collectionView = [[UICollectionView alloc]initWithFrame:self.view.frame collectionViewLayout:layout];
+    
+   
+    
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
+    [self.view addSubview:self.collectionView];
+    
+    
 }
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return 18;
+}
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 2;
+}
+
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionViewCell* cell =  [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1.0];
+    
+    return cell;
+}
+
+
     
 -(void) show{
     NSLog(@"showHUDWhile");
